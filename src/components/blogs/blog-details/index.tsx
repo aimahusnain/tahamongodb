@@ -149,7 +149,7 @@ export default function BlogDetailsHome({ blogData }: { blogData: Blog }) {
                       <p className="text-gray-500 dark:text-gray-400">
                         {comment.split("|")[0]}
                       </p>
-                    </div>
+                    </div> 
                   ))
                 : null}
             </section>
