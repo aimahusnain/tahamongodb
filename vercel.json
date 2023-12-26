@@ -1,7 +1,4 @@
 {
-  "scripts": {
-    "build": "next build"
-  },
   "builds": [
     {
       "src": "api/**/*.js",
