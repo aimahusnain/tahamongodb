@@ -1,10 +1,27 @@
 {
-    "builds": [
-  
-      {
-        "src": "prisma",
-        "use": "prisma generate"
-      }
-    ]
-  }
-  
+  "scripts": {
+    "build": "next build"
+  },
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "prisma",
+      "use": "prisma generate"
+    },
+    {
+      "src": "public/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ]
+}
