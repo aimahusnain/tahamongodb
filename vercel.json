@@ -1,0 +1,10 @@
+{
+    "builds": [
+  
+      {
+        "src": "prisma",
+        "use": "prisma generate"
+      }
+    ]
+  }
+  
