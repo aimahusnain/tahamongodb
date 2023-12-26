@@ -183,7 +183,7 @@ export default function Create(){
                         <option value={''} id="">Select</option>
                         {control.options.map((optionItem) => (
                               <option
-                              id={optionItem.value}
+                              key={optionItem.value}
                                 value={optionItem.value}
                               >
                                 {optionItem.label}
